@@ -1,0 +1,9 @@
+a = input().split()
+b = []
+def Check(a):
+    for i in a:
+        if len(i) > 5 and 'w' in i and 'a' in i and 'z' in i and 'u' in i and 'p' in i or 'W' in i or 'A' in i or 'Z' in i or 'U' in i or 'P' in i:
+            b.append(i)
+    return b
+
+print(Check(a))
