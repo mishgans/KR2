@@ -1,0 +1,16 @@
+import unittest
+
+from kr2n2 import Check
+
+class CheckTest(unittest.TestCase):
+    def test_Check(self):
+        self.assertEqual(Check('Wazzzzzuuuup bro haw ware youuuozw Zupppawazup ooo www zuuuppzup wupaz wupaz zoooo wzauuuuuppp ppppuz waz zaw upppzwaa uu zwa zwa', ['Wazzzzzuuuup', 'Zupppawazup', 'wzauuuuuppp', 'upppzwaa']))
+
+
+    def test_errors(self):
+        self.assertRaises(Check('wazup'))
+        self.assertRaises(Check('wazupsp'))
+        self.assertRaises(Check('wazups asddfas'))
+
+
+unittest.main()
